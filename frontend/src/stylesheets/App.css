@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+form {
+  margin: 0;
+}
+
+input {
+  border: none;
+}
+
+textarea {
+  border: none;
+  width: 100%;
+  font-size: 1em;
+  resize: none;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+
+.button {
+    font-size: .75em;
+    font-weight: 600;
+    padding: 3px 5px;
+    text-align: left;
+    color:#444;
+    border:1px solid #CCC;
+    background:#DDD;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+    cursor:pointer;
+    text-align: center;
+    white-space: nowrap;
+    width:auto;
+
+}
+
+.button:active {
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
+}
+
+.header {
+  background-color: #222;
+  display: flex;
+  padding: .5rem;
+}
+
+.header > div {
+  color: white;
+  font-size: 1rem;
+  padding: .5rem;
+  cursor:pointer;
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.options {
+  white-space: nowrap;
+  text-align: right;
+}
+
+.options > .button {
+   display:inline-block;
+   margin: 0 .5em 0 0;
+}
+
+.list > .component {
+   border:1px grey dotted;
+}
+
+.list > div {
+   display:flex;
+   min-height: 1.4em;
+   padding: .5em;
+   justify-content: space-between;
+   margin: 0 .5em .5em .5em ;
+}
+
+.grid > div {
+   display:flex;
+   min-height: 1.4em;
+   padding: 0;
+   justify-content: space-between;
+   margin: 0 .5em .5em .5em ;
+}
+
+.list > .head {
+    border:none;
+}
+
+.padding-1-em {
+   padding: 1em !important;
+}
+
+.no-margin-padding-border > div {
+   border:none !important;
+   padding: 0;
+   margin: 0;
+}
+
+.grid > .component {
+   display:flex;
+   min-height: 1.4rem;
+   justify-content: space-between;
+   flex-basis: 100%;
+}
+
+.tile {
+  display: inline-block;
+  border: 1px solid #333;
+  text-align: left;
+  margin: .5rem .5rem 0 0;
+  padding: .5rem;
+  min-width: 10rem;
+  min-height: 1rem;
+  white-space: nowrap;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
